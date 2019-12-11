@@ -2,11 +2,9 @@ require "pry"
 
 def reverse_each_word(sentence)
   pieces = sentence.split
-  pieces.collect do |word| 
-    word.reverse
-  end
+  rev_pieces = pieces.collect{|word| word.reverse}
 #binding.pry  
-  pieces.join(" ")
+  rev_pieces.join(" ")
 #binding.pry
 end
 
